@@ -108,23 +108,24 @@
 
 
 
-  <meta name="description" content="一个正在学习Android和iOS的码农哥">
-<meta property="og:type" content="website">
-<meta property="og:title" content="李黑的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="判断两个变量是否相等的方式有两种：  利用运算符 == 利用equals方法  (1)比较基本Java基本数据类型比较基本数据类型，只能用“==”，不能用equals，这里比较的是两个变量的值； (2)比较包装类比较包装类，举个例子123456789Integer i1  = new Integer(10);Integer i2 = new Integer(10);System.out.print">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java 判断两个变量是否相等">
+<meta property="og:url" content="http://yoursite.com/2018/09/10/Java-判断两个变量是否相等/index.html">
 <meta property="og:site_name" content="李黑的博客">
-<meta property="og:description" content="一个正在学习Android和iOS的码农哥">
+<meta property="og:description" content="判断两个变量是否相等的方式有两种：  利用运算符 == 利用equals方法  (1)比较基本Java基本数据类型比较基本数据类型，只能用“==”，不能用equals，这里比较的是两个变量的值； (2)比较包装类比较包装类，举个例子123456789Integer i1  = new Integer(10);Integer i2 = new Integer(10);System.out.print">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-09-10T08:32:34.059Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="李黑的博客">
-<meta name="twitter:description" content="一个正在学习Android和iOS的码农哥">
+<meta name="twitter:title" content="Java 判断两个变量是否相等">
+<meta name="twitter:description" content="判断两个变量是否相等的方式有两种：  利用运算符 == 利用equals方法  (1)比较基本Java基本数据类型比较基本数据类型，只能用“==”，不能用equals，这里比较的是两个变量的值； (2)比较包装类比较包装类，举个例子123456789Integer i1  = new Integer(10);Integer i2 = new Integer(10);System.out.print">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/10/Java-判断两个变量是否相等/"/>
 
 
 
@@ -134,7 +135,7 @@
   };
 </script>
 
-  <title>李黑的博客</title>
+  <title>Java 判断两个变量是否相等 | 李黑的博客</title>
   
 
 
@@ -181,8 +182,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -223,7 +223,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
   </li>
@@ -267,9 +267,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -301,11 +301,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/10/Java-判断两个变量是否相等/" itemprop="url">
-                  Java 判断两个变量是否相等
-                </a>
+          <h1 class="post-title" itemprop="name headline">Java 判断两个变量是否相等
               
             
           </h1>
@@ -368,9 +364,7 @@
       
 
       
-        
-          
-            <p>判断两个变量是否相等的方式有两种：</p>
+        <p>判断两个变量是否相等的方式有两种：</p>
 <ul>
 <li>利用运算符 ==</li>
 <li>利用equals方法</li>
@@ -385,8 +379,6 @@
 <p>会不会有一个疑问，为什么前面两个比较的结果都是true！！！ 不是说 == 比较的是内存地址吗？<br>栈区存放的是基本数据和引用地址；堆区存放的是对象；其实还有一个是String池（独立于栈区和堆区)。<br>首先 String str1 = “abcd”； 在栈区创建str1的引用，然后在String池中寻找其指向的对象（”abcd”）,如果没有就创建一个，然后让str1<br>指向String池中的这个对象，如果有，就直接指向这个对象；</p>
 <h3 id="4-比较对象"><a href="#4-比较对象" class="headerlink" title="(4)比较对象"></a>(4)比较对象</h3><p>“==”比较的是内存地址，equals比较的也是内存地址，如果没有重写equals方法的类都是调用的基类Object的equals的方法。</p>
 
-          
-        
       
     </div>
 
@@ -406,229 +398,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/10/Java基础第一课 - Java 基本数据类型/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LeeH">
-      <meta itemprop="description" content="一个正在学习Android和iOS的码农哥">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="李黑的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/10/Java基础第一课 - Java 基本数据类型/" itemprop="url">
-                  Java基础第一课 - Java 基本数据类型
-                </a>
-              
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2018/09/10/Java基础第一课 - Java 基本数据类型/" rel="next" title="Java基础第一课 - Java 基本数据类型">
+                <i class="fa fa-chevron-left"></i> Java基础第一课 - Java 基本数据类型
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2018-09-10 10:56:40 / Modified: 15:21:46" itemprop="dateCreated datePublished" datetime="2018-09-10T10:56:40+08:00">2018-09-10</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h3 id="1-基本数据类型有八种，可分为四类"><a href="#1-基本数据类型有八种，可分为四类" class="headerlink" title="(1)基本数据类型有八种，可分为四类"></a>(1)基本数据类型有八种，可分为四类</h3><ul>
-<li>byte (1个字节)  – 整形</li>
-<li>short （2个字节）- 整形</li>
-<li>int （4个字节）- 整形</li>
-<li>long （8个字节）- 整形</li>
-<li>float （4个字节）- 浮点型</li>
-<li>double （8个字节）- 浮点型</li>
-<li>boolean  （1位）- 逻辑型</li>
-<li>char （2个字节）- 字符型<br>注意：1个字节（B）  = 8位（bit）</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//基本数据类型</span><br><span class="line">byte bt = 0;</span><br><span class="line">short s = 0;</span><br><span class="line">int i = 0;</span><br><span class="line">long l = 0L;</span><br><span class="line">float f = 0.0f;</span><br><span class="line">double d = 0.0;</span><br><span class="line">boolean bool = false;</span><br><span class="line">char c = &apos; &apos;;</span><br></pre></td></tr></table></figure>
-<h3 id="2-基本数据类型的拆装箱（JDK1-5-才有拆装箱）"><a href="#2-基本数据类型的拆装箱（JDK1-5-才有拆装箱）" class="headerlink" title="(2)基本数据类型的拆装箱（JDK1.5 才有拆装箱）"></a>(2)基本数据类型的拆装箱（JDK1.5 才有拆装箱）</h3><table>
-<thead>
-<tr>
-<th style="text-align:center">基本类型</th>
-<th style="text-align:center">包装类</th>
-<th style="text-align:center">默认值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">byte</td>
-<td style="text-align:center">Byte</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">short</td>
-<td style="text-align:center">Short</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">int</td>
-<td style="text-align:center">Integer</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">long</td>
-<td style="text-align:center">Long</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">float</td>
-<td style="text-align:center">Float</td>
-<td style="text-align:center">0.0</td>
-</tr>
-<tr>
-<td style="text-align:center">double</td>
-<td style="text-align:center">Double</td>
-<td style="text-align:center">0.0</td>
-</tr>
-<tr>
-<td style="text-align:center">boolean</td>
-<td style="text-align:center">Boolean</td>
-<td style="text-align:center">false</td>
-</tr>
-<tr>
-<td style="text-align:center">char</td>
-<td style="text-align:center">Character</td>
-<td style="text-align:center">空</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//装箱</span><br><span class="line">Integer integer = new Integer(0);</span><br><span class="line">integer = 1024;</span><br><span class="line"></span><br><span class="line">//拆箱</span><br><span class="line">int i = integer;</span><br></pre></td></tr></table></figure>
-<p>第一类：整数类型（byte、short、int、long）<br><img src="https://upload-images.jianshu.io/upload_images/871379-fafdcdc0c864933c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>1、JAVA各整数类型有固定的表示范围和字段长度，其不受操作系统的影响，以保证Java的可移植性<br>2、JAVA整型常量有三种表示方法：<br>十进制：如：123，55等；<br>八进制：以0开头，如：022等；<br>十六进制：以0x或0X开头，如0X32等；<br>3、JAVA的整型变量默认为int类型，申明long类型的可以在数值后面加L，<br>      比如：int i=234;//正确     long j=888888888888888L;//不加L则错误。</p>
-<p>第二类：浮点类型（float、double）<br><img src="https://upload-images.jianshu.io/upload_images/871379-db297b21b5213642.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>1、JAVA各浮点类型有固定的表示范围和字段长度，其不受操作系统的影响，以保证Java的可移植性<br>2、JAVA浮点型常量有两种表示方法：<br>十进制数形式：比如：3.0，32.66等；<br>科学计数法形式：比如：3.15E2，5.23e2，5.23e-2；<br>3、JAVA浮点型常量默认为double型，申明float类型可以在数值后面加F<br>      比如：double a=2.333;//正确      float b=3.555F;//不加L则出错。<br>4.字面量为浮点型时，默认是double型；</p>
-<p>第三类：文本型（char）<br>1、字符常量是用单引号引起来的单个字符。<br>     比如：char a=’B’ ;    char name=‘中’;<br>2、JAVA采用unicode编码来表示，每个字符占两个字节（一个字节有八位），因此可以用十六进制编码表示：<br>    比如：char a=‘\u0056’;<br>3、JAVA语言中还支持转义字符，来将其后面的字符转为其他含义：<br>    比如：char a=‘\n’;</p>
-<p>第四类：布尔型（boolean）<br>布尔值只可以取true或false,不可以用0或者非0来替代，这点和C、C++等不同</p>
-<h3 id="3-基本类型转换"><a href="#3-基本类型转换" class="headerlink" title="(3)基本类型转换"></a>(3)基本类型转换</h3><p>(1)自动类型转换</p>
-<p>Java所有的数值类型变量都可以互相转换，如果系统把某种基本类型的值直接赋给另一种基本类型的变量，则这种方式被称为自动类型转换。</p>
-<p>int e = 1;</p>
-<p>double d =e;</p>
-<p>以上代码不会报错，系统会自动转换。</p>
-<p>(2) 强制类型转换</p>
-<p>当把一个范围大的数值或变量赋给另一个范围小的变量时，需要进行强制转换。</p>
-<p>　　double d =1.5;</p>
-<p>　　int e = d;</p>
-<p>　　以上代码会报错，把大范围的数值赋给小范围的变量，需要强制转换，这样才能通过编译，且大范围的数值会丢失精度。</p>
-<p>　　int e = (int) d;</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -638,14 +429,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -666,8 +458,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -712,6 +513,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-比较基本Java基本数据类型"><span class="nav-number">1.</span> <span class="nav-text">(1)比较基本Java基本数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-比较包装类"><span class="nav-number">2.</span> <span class="nav-text">(2)比较包装类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-比较String"><span class="nav-number">3.</span> <span class="nav-text">(3)比较String</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-比较对象"><span class="nav-number">4.</span> <span class="nav-text">(4)比较对象</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -842,6 +659,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.1"></script>
+
+
 
   
 
